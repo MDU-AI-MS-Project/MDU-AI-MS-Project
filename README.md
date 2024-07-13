@@ -24,9 +24,9 @@ The tool currently supports 5 algorithms: SCARF, ICEBERG, MassFromer, RASSP, CFM
 
 ## Prerequisites
 
-1) a Unix-like operating system (we tested on Linux with **Ubuntu 22.04**) 
+1) a **Linux** operating system (we tested on Ubuntu 22.04) 
 
-2) The system must have **Anaconda** installed (could potentially run with **Python 3** without Anaconda but was not tested) 
+2) The system must have **Anaconda** installed 
 
 3) The system must have **git** installed
 
@@ -34,10 +34,11 @@ The tool currently supports 5 algorithms: SCARF, ICEBERG, MassFromer, RASSP, CFM
 
 
 ## Installation
-### Create project root directory
+### Project root directory
 
-In order for the tool to work a root directoy for the project needs to be created by the name of */home/greg*
+The project needs to be install under a specific *project root directory* which has to exist before the installation.
 All the repos clones and installations needs to be done from that directory.
+Currently, the *project root directory* has to be */home/greg*
 
 
 ### Download and install the algorithms 
@@ -45,20 +46,20 @@ All the repos clones and installations needs to be done from that directory.
 
 #### 1. Download & install MassFormer:
     
-In the project root directory, clone the [MassFormer](https://github.com/Roestlab/massformer) repo from github:
+In the *project root directory*, clone the [MassFormer](https://github.com/Roestlab/massformer) repo from github:
 
 ```bash
 git clone https://github.com/Roestlab/massformer
 ```
 
-Follow the [MassFormer installation instructions](https://github.com/Roestlab/massformer?tab=readme-ov-file#massformer) 
+Follow the *CPU Environment* section in the  [MassFormer installation instructions](https://github.com/Roestlab/massformer?tab=readme-ov-file#massformer) 
 
 
 #### 2. Download & Install SCARF & ICEBERG
-In the project root directory, clone the [SCARF & ICEBERG](https://github.com/samgoldman97/ms-pred) repo from github:
+In the *project root directory*, clone the [SCARF & ICEBERG](https://github.com/samgoldman97/ms-pred) repo from github:
 
 ```bash
-git clone https://github.com/samgoldman97/ms-pred
+git clone https://github.com/samgoldman97/ms-pred md-pred-new
 ```
 
 Follow the [SCARF & ICEBERG installation instructions](https://github.com/samgoldman97/ms-pred?tab=readme-ov-file#install--setup-) 
@@ -66,7 +67,7 @@ Follow the [SCARF & ICEBERG installation instructions](https://github.com/samgol
 
 #### 3. Download & Install RASSP
 
-In the project root directory, clone the [RASSP](https://github.com/thejonaslab/rassp-public) repo from github:
+In the *project root directory*, clone the [RASSP](https://github.com/thejonaslab/rassp-public) repo from github:
 
 ```bash
 git clone https://github.com/thejonaslab/rassp-public
@@ -87,27 +88,27 @@ docker pull wishartlab/cfmid
 
 Under the project root directory create a directory called MDU_outputs
 
-Clone the current repository into a subdirectory named MDU_outputs under the project root directory.
+Clone the current repository into a subdirectory of the *project root directory* named MDU_outputs.
 
 ```bash
 git clone https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project MDU_outputs
 ```
 
-Install the dependencies
+Create an conda environemnt and install the dependencies
 ```bash
-cd MDU_outputs
-conda install numpy pandas matchms mathplotlib 
+conda create -n mduaims numpy pandas matchms matplotlib rdkit
 ```
 
 
 ## Usage
 
 ### Run the tool 
+Go into the *project root directory* ,  activate the conda environment and run the python code 
 
 ```bash
-# Example usage
+conda activate mduaims
 cd /home/greg/MDU_outputs
-python final_msms_gui.py
+python msms_gui.py
 ```
 ### Fill the details in the UI
 After the UI pops up,  fill in the following details:
