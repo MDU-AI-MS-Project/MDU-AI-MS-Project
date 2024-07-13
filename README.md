@@ -13,14 +13,16 @@ The UI allows entering a molecule in smiles format,  setting a threshold for the
 
 After running the models, converting ,cleaning and normalizing the results they are presented in a table and a histogram for comparsion.
 
+The tool currently supports 5 algorithms: SCARF, ICEBERG, MassFromer, RASSP, CFM-ID
+
 
 ## Table of Contents
-
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 
-## Prerequisits
+## Prerequisites
 
 1) a Unix-like operating system (we tested on Linux with **Ubuntu 22.04**) 
 
@@ -32,76 +34,96 @@ After running the models, converting ,cleaning and normalizing the results they 
 
 
 ## Installation
+### Create project root directory
+
+In order for the tool to work a root directoy for the project needs to be created by the name of */home/greg*
+All the repos clones and installations needs to be done from that directory.
+
 
 ### Download and install the algorithms 
 
- Download & install MassFormer:
-    
-    Clone the [MassFormer](https://github.com/Roestlab/massformer) repo from github
-    
-    ```bash
-    git clone https://github.com/Roestlab/massformer
-    ```
 
-    Follow the [MassFormer installation instructions](https://github.com/Roestlab/massformer?tab=readme-ov-file#massformer) 
+#### 1. Download & install MassFormer:
+    
+In the project root directory, clone the [MassFormer](https://github.com/Roestlab/massformer) repo from github:
+
+```bash
+git clone https://github.com/Roestlab/massformer
+```
+
+Follow the [MassFormer installation instructions](https://github.com/Roestlab/massformer?tab=readme-ov-file#massformer) 
 
 
 #### 2. Download & Install SCARF & ICEBERG
-    Clone the [SCARF & ICEBERG](https://github.com/samgoldman97/ms-pred) repo from github
+In the project root directory, clone the [SCARF & ICEBERG](https://github.com/samgoldman97/ms-pred) repo from github:
+
+```bash
+git clone https://github.com/samgoldman97/ms-pred
+```
+
+Follow the [SCARF & ICEBERG installation instructions](https://github.com/samgoldman97/ms-pred?tab=readme-ov-file#install--setup-) 
     
-    ```bash
-    git clone https://github.com/samgoldman97/ms-pred
-    ```
 
-    Follow the [SCARF & ICEBERG installation instructions](https://github.com/samgoldman97/ms-pred?tab=readme-ov-file#install--setup-) 
-    
+#### 3. Download & Install RASSP
 
-#### 3. Download & Install RASPP
+In the project root directory, clone the [RASSP](https://github.com/thejonaslab/rassp-public) repo from github:
 
-    Clone the [SCARF & ICEBERG](https://github.com/samgoldman97/ms-pred) repo from github
-    
-    ```bash
-     git clone https://github.com/samgoldman97/ms-pred
-    ```
+```bash
+git clone https://github.com/thejonaslab/rassp-public
+```
 
-    follow [RASPP Installation instructions](https://github.com/thejonaslab/rassp-public?tab=readme-ov-file#option-1-local-installation) 
+follow [RASPP Installation instructions](https://github.com/thejonaslab/rassp-public?tab=readme-ov-file#option-1-local-installation) 
 
 
 #### 4. Download CFM-ID 
 
-    Download the CFM-ID Docker image:
+Download the CFM-ID Docker image:
 
-    ```bash
-    docker pull wishartlab/cfmid
-    ```
+```bash
+docker pull wishartlab/cfmid
+```
 
 ### Download and install MDU AI MS Project
 
+Under the project root directory create a directory called MDU_outputs
+
+Clone the current repository into a subdirectory named MDU_outputs under the project root directory.
+
+```bash
+git clone https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project MDU_outputs
+```
+
 Install the dependencies
 ```bash
+cd MDU_outputs
 conda install numpy pandas matchms mathplotlib 
 ```
 
-Download the current repository
-```bash
-git clone https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project
-```
 
 ## Usage
 
-How to run 
+### Run the tool 
 
 ```bash
 # Example usage
-python run_all.py
+cd /home/greg/MDU_outputs
+python final_msms_gui.py
 ```
+### Fill the details in the UI
+After the UI pops up,  fill in the following details:
+- Moleculde name :  in *smiles* format, for example: *CCCO*
+- Threshold: as float, for example *0.001*
+- Choose which of the 10 possible predictions you want to run by checking in the empty checkboxes 
 
 ![GUI](screenshots/gui.jpg)
-*User Interface*
+
+After filling it the details , press *Plot Graph* to show the histograms
+
+### Restuls:
 
 ![Histogram](screenshots/figure.png)
 *Histogram*
-
+ 
 ![Histogram3D](screenshots/figure3d.png)
 *3D Histogram*
 
