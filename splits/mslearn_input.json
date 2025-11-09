@@ -1,0 +1,850 @@
+[
+    {
+        "id": 1,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 2,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 3,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 4,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 5,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 6,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 7,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 8,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 9,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "QDA"
+    },
+    {
+        "id": 10,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 11,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 12,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 13,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 14,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 15,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 16,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 17,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 18,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 19,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "QDA"
+    },
+    {
+        "id": 20,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 21,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Vote-2"
+    },
+    {
+        "id": 22,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Vote-cfmid_spectra"
+    },
+    {
+        "id": 23,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Vote-rassp_spectra"
+    },
+    {
+        "id": 24,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Vote-scarf_spectra"
+    },
+    {
+        "id": 25,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Vote-massformer_spectra"
+    },
+    {
+        "id": 26,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllPred",
+        "classifier": "Vote-iceberg_spectra"
+    },
+    {
+        "id": 27,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 28,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 29,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 30,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 31,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 32,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 33,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 34,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 35,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "QDA"
+    },
+    {
+        "id": 36,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDesc",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 37,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 38,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 39,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 40,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 41,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 42,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 43,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 44,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 45,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "QDA"
+    },
+    {
+        "id": 46,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 47,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 48,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 49,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 50,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 51,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 52,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 53,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 54,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 55,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "QDA"
+    },
+    {
+        "id": 56,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_binary.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_binary.csv",
+        "classification_mode": "binary",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 57,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 58,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 59,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 60,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 61,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 62,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 63,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 64,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 65,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "QDA"
+    },
+    {
+        "id": 66,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPred",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 67,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 68,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 69,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 70,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 71,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 72,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 73,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 74,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 75,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "QDA"
+    },
+    {
+        "id": 76,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllPred",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 77,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 78,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 79,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 80,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 81,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 82,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 83,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 84,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 85,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "QDA"
+    },
+    {
+        "id": 86,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDesc",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 87,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 88,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 89,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 90,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 91,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 92,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 93,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 94,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 95,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "QDA"
+    },
+    {
+        "id": 96,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescAllPredUncorr",
+        "classifier": "XGBoost"
+    },
+    {
+        "id": 97,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Nearest-Neighbors"
+    },
+    {
+        "id": 98,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "RBF-SVM"
+    },
+    {
+        "id": 99,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Gaussian-Process"
+    },
+    {
+        "id": 100,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Decision-Tree"
+    },
+    {
+        "id": 101,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Random-Forest"
+    },
+    {
+        "id": 102,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Neural-Net"
+    },
+    {
+        "id": 103,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "AdaBoost"
+    },
+    {
+        "id": 104,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "Naive-Bayes"
+    },
+    {
+        "id": 105,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "QDA"
+    },
+    {
+        "id": 106,
+        "train_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_train70_bin4.csv",
+        "test_path": "/RG/compbio/michaelel/data/GNPSnew_canonical_output_split_test15_bin4.csv",
+        "classification_mode": "binned",
+        "fitting_set": "AllDescUncorr",
+        "classifier": "XGBoost"
+    }
+]
