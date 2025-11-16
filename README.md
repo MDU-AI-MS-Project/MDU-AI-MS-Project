@@ -1,138 +1,121 @@
+# Mass Spectrometry Fragmentation Prediction: Ensemble Learning Approach
 
-# MDU AI MS Project
+## Overview
 
-There are different algorithms for MS/MS predicition but each one is installed, trained and run differently, accepting the input in a different way and producing the output in a different format which makes running different models and comparing the results difficult.
+This repository contains supplementary materials for the scientific research **"Improving In-Silico Fragmentation Prediction via Ensemble Machine Learning"** authored by Gregory Kleiner, Alexander Tarnopolsky, and Michael Elgart at the Molecular Discovery Lab, Sheba Medical Center.
 
-the MDU AI MS Project allows to easily run 5 different models to be run on a specific molecule in different energy level and compare the results.
+The work demonstrates that combining multiple fragmentation prediction tools through ensemble machine learning methods yields substantial performance improvements over individual predictors when analyzing novel chemical compounds.
 
-## Description
+## Research Summary
 
-The tool is a UI wrapper which runs 5 different trained mass spectra predcition models on a specific molecule,  at different energy levels, collects the resuts, filters, normalizes them and then compares them.
+**Problem Statement:** Current in-silico mass spectrometry fragmentation tools achieve less than 50% accuracy on novel compounds, with inter-tool agreement below 20%, limiting practical applicability for metabolite identification.
 
-The UI allows entering a molecule in smiles format,  setting a threshold for the specta peaks and choosing which models to run and on whice energy level. 
+**Solution:** An ensemble learning framework that aggregates predictions from five independent tools (ICEBERG, SCARF, RASSP, CFM-ID, MassFormer) combined with molecular descriptors to predict fragment ion presence/absence across mass spectrum bins.
 
-After running the models, converting ,cleaning and normalizing the results they are presented in a table and a histogram for comparsion.
+**Results:**
+- Training dataset: 21,147 novel compounds from GNPS repository (submissions after January 2024)
+- Optimal model: XGBoost classifier achieving 0.70 accuracy and 0.57 F1 score
+- Performance gain: Approximately 40% improvement over best individual predictor
+- Feature importance: SHAP analysis identifies precursor mass, structural topology, hydrophobicity, and tool-specific predictions as critical
 
-The tool currently supports 5 algorithms: SCARF, ICEBERG, MassFromer, RASSP, CFM-ID
+## Citation
 
-
-## Table of Contents
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-
-## Prerequisites
-
-1) a **Linux** operating system (we tested on Ubuntu 22.04) 
-
-2) The system must have **Anaconda** installed 
-
-3) The system must have **git** installed
-
-4) The system must have **Docker** installed 
-
-
-## Installation
-### Project root directory
-
-The project needs to be install under a specific *project root directory* which has to exist before the installation.
-All the repos clones and installations needs to be done from that directory.
-Currently, the *project root directory* has to be */home/greg*
-
-
-### Download and install the algorithms 
-
-
-#### 1. Download & install MassFormer:
-    
-In the *project root directory*, clone the [MassFormer](https://github.com/Roestlab/massformer) repo from github:
-
-```bash
-git clone https://github.com/Roestlab/massformer
+**BibTeX Format:**
+```bibtex
+@article{kleiner2025msensemble,
+  author = {Kleiner, Gregory and Tarnopolsky, Alexander and Elgart, Michael},
+  title = {Improving In-Silico Fragmentation Prediction via Ensemble Machine Learning},
+  institution = {Molecular Discovery Lab, Metabolic Center, Sheba Medical Center},
+  address = {Tel HaShomer, Israel},
+  year = {2025},
+  howpublished = {\url{https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project}}
+}
 ```
 
-Follow the *CPU Environment* section in the  [MassFormer installation instructions](https://github.com/Roestlab/massformer?tab=readme-ov-file#massformer) 
-
-
-#### 2. Download & Install SCARF & ICEBERG
-In the *project root directory*, clone the [SCARF & ICEBERG](https://github.com/samgoldman97/ms-pred) repo from github:
-
-```bash
-git clone https://github.com/samgoldman97/ms-pred md-pred-new
+**Text Format:**
 ```
-
-Follow the [SCARF & ICEBERG installation instructions](https://github.com/samgoldman97/ms-pred?tab=readme-ov-file#install--setup-) 
-    
-
-#### 3. Download & Install RASSP
-
-In the *project root directory*, clone the [RASSP](https://github.com/thejonaslab/rassp-public) repo from github:
-
-```bash
-git clone https://github.com/thejonaslab/rassp-public
+Kleiner, G., Tarnopolsky, A., & Elgart, M. (2025).
+Improving In-Silico Fragmentation Prediction via Ensemble Machine Learning.
+Molecular Discovery Lab, Metabolic Center, Sheba Medical Center, Tel HaShomer, Israel.
+Repository: https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project
 ```
-
-follow [RASPP Installation instructions](https://github.com/thejonaslab/rassp-public?tab=readme-ov-file#option-1-local-installation) 
-
-
-#### 4. Download CFM-ID 
-
-Download the CFM-ID Docker image:
-
-```bash
-docker pull wishartlab/cfmid
-```
-
-### Download and install MDU AI MS Project
-
-Under the project root directory create a directory called MDU_outputs
-
-Clone the current repository into a subdirectory of the *project root directory* named MDU_outputs.
-
-```bash
-git clone https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project MDU_outputs
-```
-
-Create an conda environemnt and install the dependencies
-```bash
-conda create -n mduaims numpy pandas matchms matplotlib rdkit
-```
-
-
-## Usage
-
-### Run the tool 
-Go into the *project root directory* ,  activate the conda environment and run the python code 
-
-```bash
-conda activate mduaims
-cd /home/greg/MDU_outputs
-python msms_gui.py
-```
-### Fill the details in the UI
-After the UI pops up,  fill in the following details:
-- Moleculde name :  in *smiles* format, for example: *CCCO*
-- Threshold: as float, for example *0.001*
-- Choose which of the 10 possible predictions you want to run by checking in the empty checkboxes 
-
-![GUI](screenshots/gui.jpg)
-
-After filling it the details , press *Plot Graph* to show the histograms
-
-### Restuls:
-
-![Histogram](screenshots/figure.png)
-*Histogram*
- 
-![Histogram3D](screenshots/figure3d.png)
-*3D Histogram*
-
 
 ## License
 
-[Specify the license under which your project is distributed.]
+This work is released under the **MIT License**.
 
-This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
+**Copyright Notice:**  
+© 2025 Molecular Discovery Lab, Sheba Medical Center
 
+**Terms:**
 
+Permission is granted, without charge, to any individual obtaining a copy of this software and associated documentation (the "Materials"), to utilize the Materials without restriction, including rights to use, copy, modify, merge, publish, distribute, sublicense, and sell copies, subject to the following conditions:
+
+- This copyright notice and permission notice must be included in all copies or substantial portions of the Materials.
+
+**Warranty Disclaimer:**  
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE MATERIALS OR THEIR USE.
+
+**Third-Party Components:**  
+Portions of utility code may derive from publicly available examples in scikit-learn, RDKit, and XGBoost documentation. Such components retain their original licenses. Integration code and ensemble architectures are original works of the authors.
+
+Full license text: https://opensource.org/licenses/MIT
+
+## Disclaimer
+
+**Research Software Notice**
+
+This repository contains experimental software developed for scientific research purposes. Users should be aware of the following:
+
+**Intended Use:**
+- Academic research and education
+- Method benchmarking and comparison
+- Non-clinical computational chemistry applications
+
+**Limitations and Warnings:**
+1. **No Warranties:** Software provided without guarantees of correctness, completeness, or suitability for specific purposes
+2. **Generalization:** Models trained on specific GNPS dataset; performance may differ on other chemical spaces
+3. **External Dependencies:** Predictions require third-party tools (CFM-ID, RASSP, etc.) with separate licensing
+4. **Not for Clinical Use:** Results require experimental validation before any diagnostic or therapeutic applications
+5. **Liability:** Authors and Sheba Medical Center assume no responsibility for damages resulting from software use
+6. **Data Privacy:** Ensure compliance with institutional policies when processing proprietary chemical data
+
+**Recommendations:**
+- Validate predictions with experimental MS/MS data when possible
+- Consult domain experts for interpretation in critical applications
+- Review external tool licenses before commercial deployment
+- Perform independent testing on representative data before production use
+
+**Regulatory Compliance:**  
+This software has not been evaluated or approved by regulatory agencies (FDA, EMA, etc.). Any clinical, diagnostic, or pharmaceutical applications require appropriate regulatory review and approval processes.
+
+## Contact Information
+
+**Corresponding Author:**  
+Michael Elgart, PhD  
+Email: michael.elgart@sheba.health.gov.il
+
+**Institution:**  
+Molecular Discovery Lab  
+Metabolic Center  
+Sheba Medical Center  
+Tel HaShomer 5265601, Israel
+
+**Contributing Authors:**  
+- Gregory Kleiner (Co-first author)
+- Alexander Tarnopolsky (Co-first author)
+
+**Repository Issues:**  
+For technical questions or bug reports, please open an issue on the GitHub repository.
+
+## Acknowledgments
+
+This research builds upon computational predictions from CFM-ID, RASSP, MassFormer, Iceberg, and SCARF. We gratefully acknowledge the developers of these tools and the GNPS community for maintaining publicly accessible spectral databases.
+
+Data analysis performed using the Python scientific computing ecosystem: NumPy, pandas, scikit-learn, XGBoost, RDKit, matplotlib, and SHAP.
+
+---
+
+**Repository URL:** https://github.com/MDU-AI-MS-Project/MDU-AI-MS-Project  
+**Last Updated:** November 2025  
+**Version:** 1.0.0
